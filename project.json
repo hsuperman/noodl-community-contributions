@@ -1,5 +1,5 @@
 {
-    "name": "Noodl Community Contributions",
+    "name": "imported contributions test",
     "components": [
         {
             "name": "/#__cloud__/Test Cloud Component",
@@ -349,6 +349,39 @@
                     }
                 ],
                 "visualRoots": []
+            }
+        },
+        {
+            "name": "/User2 Folder/User2 Component",
+            "id": "3fa52b66-c267-7c32-988b-6730e4f1eccf",
+            "graph": {
+                "connections": [],
+                "roots": [
+                    {
+                        "id": "b2dd67fc-11ee-a240-b0af-8726ff7e0a10",
+                        "type": "Group",
+                        "x": 0,
+                        "y": 0,
+                        "parameters": {},
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "08739999-25f1-d356-8893-c020f649ae49",
+                                "type": "Text",
+                                "parameters": {
+                                    "text": "Hi it's user2 here"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            }
+                        ]
+                    }
+                ],
+                "visualRoots": [
+                    "b2dd67fc-11ee-a240-b0af-8726ff7e0a10"
+                ]
             }
         }
     ],
