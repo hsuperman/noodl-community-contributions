@@ -1,6 +1,100 @@
 {
-    "name": "Project Template - Hello World",
+    "name": "Noodl Community Contributions",
     "components": [
+        {
+            "name": "/#__cloud__/Test Cloud Component",
+            "id": "e2faaf66-7dd8-832b-fdc6-a7e238443047",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "91f1bd0a-cb8c-d37c-7bf8-86cea245ae1f",
+                        "fromProperty": "Do",
+                        "toId": "6d849eda-7e24-2dab-7447-94d6ea55ec4f",
+                        "toProperty": "Success"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "91f1bd0a-cb8c-d37c-7bf8-86cea245ae1f",
+                        "type": "Component Inputs",
+                        "x": 0,
+                        "y": 0,
+                        "parameters": {},
+                        "ports": [
+                            {
+                                "name": "Do",
+                                "plug": "output",
+                                "type": "*",
+                                "index": 0
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "6d849eda-7e24-2dab-7447-94d6ea55ec4f",
+                        "type": "Component Outputs",
+                        "x": 300,
+                        "y": 0,
+                        "parameters": {},
+                        "ports": [
+                            {
+                                "name": "Success",
+                                "plug": "input",
+                                "type": "*",
+                                "index": 0
+                            },
+                            {
+                                "name": "Failure",
+                                "plug": "input",
+                                "type": "*",
+                                "index": 1
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    }
+                ],
+                "visualRoots": []
+            }
+        },
+        {
+            "name": "/#__cloud__/Test Cloud Function",
+            "id": "126282d0-dc42-7f3c-3683-a914dd5cdcb3",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "42d5c981-c2c4-5180-5e80-dd6862d640c9",
+                        "fromProperty": "receive",
+                        "toId": "34fa6228-9a56-4704-55c8-967a95bdcb45",
+                        "toProperty": "send"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "42d5c981-c2c4-5180-5e80-dd6862d640c9",
+                        "type": "noodl.cloud.request",
+                        "x": 0,
+                        "y": 0,
+                        "parameters": {},
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "34fa6228-9a56-4704-55c8-967a95bdcb45",
+                        "type": "noodl.cloud.response",
+                        "x": 300,
+                        "y": 0,
+                        "parameters": {},
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    }
+                ],
+                "visualRoots": []
+            }
+        },
         {
             "name": "/App",
             "graph": {
@@ -39,6 +133,9 @@
                             }
                         ]
                     }
+                ],
+                "visualRoots": [
+                    "246f9453-a119-ac78-171e-3806cf596ecc"
                 ]
             },
             "metadata": {
@@ -112,7 +209,89 @@
                         "dynamicports": [],
                         "children": []
                     }
+                ],
+                "visualRoots": [
+                    "a4b7e4d4-c01d-1267-30b6-c2b448b90067"
                 ]
+            }
+        },
+        {
+            "name": "/Test Folder/Test Logic Component",
+            "id": "f66622d4-fec9-d280-2a9c-2bb929b48b5a",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "fa6b8ba1-b660-612c-ac12-0864d084c45b",
+                        "fromProperty": "input",
+                        "toId": "69a4200a-89eb-6c87-77db-afc3914896da",
+                        "toProperty": "output"
+                    },
+                    {
+                        "fromId": "fa6b8ba1-b660-612c-ac12-0864d084c45b",
+                        "fromProperty": "Do",
+                        "toId": "69a4200a-89eb-6c87-77db-afc3914896da",
+                        "toProperty": "Success"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "fa6b8ba1-b660-612c-ac12-0864d084c45b",
+                        "type": "Component Inputs",
+                        "x": 0,
+                        "y": 0,
+                        "parameters": {},
+                        "ports": [
+                            {
+                                "name": "Do",
+                                "plug": "output",
+                                "type": "*",
+                                "index": 0
+                            },
+                            {
+                                "name": "input",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 1
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "69a4200a-89eb-6c87-77db-afc3914896da",
+                        "type": "Component Outputs",
+                        "x": 417,
+                        "y": -1,
+                        "parameters": {},
+                        "ports": [
+                            {
+                                "name": "Success",
+                                "plug": "input",
+                                "type": "*",
+                                "index": 0
+                            },
+                            {
+                                "name": "Failure",
+                                "plug": "input",
+                                "type": "*",
+                                "index": 1
+                            },
+                            {
+                                "name": "output",
+                                "plug": "input",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 2
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    }
+                ],
+                "visualRoots": []
             }
         }
     ],
