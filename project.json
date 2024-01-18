@@ -293,6 +293,63 @@
                 ],
                 "visualRoots": []
             }
+        },
+        {
+            "name": "/Test Folder/Test Logic Component 2",
+            "id": "b901132e-9069-338d-f0db-c9ba834f5d80",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "6f87cd82-dbdf-b5f6-d16b-6584a4f0e9b0",
+                        "fromProperty": "Do",
+                        "toId": "cf7e3300-dbd3-11fb-a8d3-9d5f14c3dc22",
+                        "toProperty": "Failure"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "6f87cd82-dbdf-b5f6-d16b-6584a4f0e9b0",
+                        "type": "Component Inputs",
+                        "x": 0,
+                        "y": 0,
+                        "parameters": {},
+                        "ports": [
+                            {
+                                "name": "Do",
+                                "plug": "output",
+                                "type": "*",
+                                "index": 0
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "cf7e3300-dbd3-11fb-a8d3-9d5f14c3dc22",
+                        "type": "Component Outputs",
+                        "x": 300,
+                        "y": 0,
+                        "parameters": {},
+                        "ports": [
+                            {
+                                "name": "Success",
+                                "plug": "input",
+                                "type": "*",
+                                "index": 0
+                            },
+                            {
+                                "name": "Failure",
+                                "plug": "input",
+                                "type": "*",
+                                "index": 1
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    }
+                ],
+                "visualRoots": []
+            }
         }
     ],
     "settings": {
@@ -302,7 +359,6 @@
     "rootNodeId": "246f9453-a119-ac78-171e-3806cf596ecc",
     "version": "4",
     "metadata": {
-        "dbCollections": [],
         "styles": {
             "text": {
                 "Display": {
